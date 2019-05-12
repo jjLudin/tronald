@@ -5,26 +5,26 @@
 <head>
   <title>Tronald</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="/public/stylesheets/style.css">
-  <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h1 class="display-4">"<%= quote %>"</h1>
-      <br>
-      <p class="lead">-Donald Trump</p>
-      <hr class="my-4">
-      <p class="lead">Published: <%= createdDate %></p>
-      <p class="lead">Source: <%= source %></p>
+  <div class="container text-center">
+    <div class="row align-items-center justify-content-center" style="height: 100vh;">
+      <div class="jumbotron">
+        <h1>"<%= quote %>"</h1>
+        <br>
+        <p class="lead">-Donald Trump</p>
+        <hr class="my-4">
+        <p class="lead">Published: <%= createdDate %></p>
+        <p class="lead"><a href="<%= source %>" target="_blank">Source</a></p>
+      </div>
     </div>
-  </div>
 </body>
 
 </html>
